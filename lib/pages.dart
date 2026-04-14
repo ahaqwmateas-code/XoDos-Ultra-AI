@@ -20,10 +20,10 @@ import 'constants.dart';
 import 'default_values.dart';
 import 'core_classes.dart';
 import 'spirited_mini_games.dart';
-
+import 'main.dart'; // For RTLWrapper, etc.
 import 'dialogs.dart';
 import 'debug.dart';
-import 'ultra_ai.dart'; // XoDos Ultra AI Integration
+//import 'app_colors.dart'; // Add this
 
 import 'package:xodos/l10n/app_localizations.dart';
 
@@ -44,8 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(Duration.zero,() async {
-      await UltraAI().initialize(); // Start Ultra AI Systems
+    Future.delayed(Duration.zero,() {
       _initializeWorkflow();
     });
     SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky, overlays: []);
@@ -76,15 +75,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   return IndexedStack(
                     index: G.pageIndex.value,
                     children: const [
-                      Column(
-                        children: [
-                          Padding(
-                            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                            child: UltraSearchSpace(), // Futuristic Search & AI Audio
-                          ),
-                          Expanded(child: TerminalPage()),
-                        ],
-                      ),
+                      TerminalPage(),
                       Padding(
                         padding: EdgeInsets.all(8),
                         child: AspectRatioMax1To1(
@@ -109,9 +100,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                         child: Column(
                                           children: [
                                             SettingPage(),
-                                            const SizedBox(height: 16),
-                                            const UltraHealthMonitor(), // New Futuristic System Health
-                                            const SizedBox(height: 16),
+                                            SizedBox.square(dimension: 8),
                                             InfoPage(openFirstInfo: false),
                                           ],
                                         ),
@@ -2018,7 +2007,7 @@ class _TerminalPageState extends State<TerminalPage> {
     return TerminalView(
       G.termPtys[G.currentContainer]!.terminal, 
       controller: G.termPtys[G.currentContainer]!.controller,
-      textStyle: TerminalStyle(fontSize: 14 * G.termFontScale.value),
+      textScaler: TextScaler.linear(G.termFontScale.value), 
       keyboardType: TextInputType.multiline,
     );
   },
@@ -4201,37 +4190,6 @@ echo "\\n=== Test Complete ==="
               
               const SizedBox(height: 12),
               
-              // --- ULTRA AI FUTURISTIC SETTINGS ---
-              Card(
-                child: ExpansionTile(
-                  leading: const Icon(Icons.auto_awesome, color: AppColors.primaryPurple),
-                  title: const Text("Ultra AI & Automation"),
-                  subtitle: const Text("Smart Repair, Auto-Refresh, AI Audio"),
-                  children: [
-                    SwitchListenable(
-                      title: "Auto-Fix System Errors",
-                      value: ultraAI.autoFixEnabled,
-                      onChanged: (v) => setState(() => ultraAI.autoFixEnabled = v),
-                    ),
-                    SwitchListenable(
-                      title: "Auto-Refresh Services",
-                      value: ultraAI.autoRefreshEnabled,
-                      onChanged: (v) => setState(() => ultraAI.autoRefreshEnabled = v),
-                    ),
-                    ListTile(
-                      leading: const Icon(Icons.speed),
-                      title: const Text("Processing Speed"),
-                      trailing: const Text("Ultra Fast"),
-                    ),
-                    ListTile(
-                      leading: const Icon(Icons.language),
-                      title: const Text("AI Thinking Mode"),
-                      trailing: const Text("Deep Intelligence"),
-                    ),
-                  ],
-                ),
-              ),
-              const SizedBox(height: 12),
               // Information
               Card(
                 color: Colors.blue[900],

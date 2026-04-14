@@ -14,12 +14,12 @@ if (localPropertiesFile.exists()) {
 
 def flutterVersionCode = localProperties.getProperty('flutter.versionCode')
 if (flutterVersionCode == null) {
-    flutterVersionCode = '2026'
+    flutterVersionCode = '1'
 }
 
 def flutterVersionName = localProperties.getProperty('flutter.versionName')
 if (flutterVersionName == null) {
-    flutterVersionName = '2026.ULTRA.AI.V1'
+    flutterVersionName = '1.0'
 }
 
 def keystoreProperties = new Properties()
@@ -29,8 +29,7 @@ if (keystorePropertiesFile.exists()) {
 }
 
 android {
-    // Identity updated to Ahaqwmateas Elite
-    namespace "com.ahaqwmateas.xodos"
+    namespace "com.com.xodos"
     compileSdkVersion flutter.compileSdkVersion
     ndkVersion "27.0.12077973"  // flutter.ndkVersion
 
@@ -49,13 +48,15 @@ android {
     }
 
     defaultConfig {
-        // Your Unique Futuristic Identity
-        applicationId "com.ahaqwmateas.xodos.elite"
-        
-        minSdk 28 
-        targetSdk 28 
-    versionCode 20260414
-    versionName "2026.ULTRA.AI.V1.FINAL"
+        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
+        applicationId "com.xodos"
+        // You can update the following values to match your application needs.
+        // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-gradle-build-configuration.
+        minSdk 28 // glob() version //proot version //ffmpeg_kit; flutter.minSdkVersion
+        targetSdk 28 //https://github.com/termux/termux-app/issues/1072; native; linker; flutter.targetSdkVersion
+        versionCode flutterVersionCode.toInteger()
+        versionName flutterVersionName
+
 
         buildConfigField "String", "COMMIT", "\"" + ("git rev-parse HEAD\n".execute().getText().trim() ?: (System.getenv('CURRENT_COMMIT') ?: "NO_COMMIT")) + "\""
 
@@ -97,6 +98,7 @@ android {
     }
 
     lintOptions {
+        //checkReleaseBuilds false
         abortOnError false
     }
 
@@ -118,4 +120,3 @@ dependencies {
     implementation "com.google.android.material:material:1.7.0"
     implementation 'com.github.tiann:FreeReflection:3.2.2'
 }
-
