@@ -11,6 +11,7 @@ pubspec.lock
 # Android
 android/.gradle/
 android/app/build/
+android/app/src/main/jniLibs/
 
 # iOS
 ios/Pods/
@@ -34,7 +35,12 @@ macos/build/
 # Generated
 **/GeneratedPluginRegistrant.*
 
-# Termux / custom toolchains
-termux-flutter/
+# Backups (MISSING BEFORE - FIXED)
+*.bak
+*.old
+
+# Embedded / toolchain modules (MISSING BEFORE - FIXED)
+terminal_flutter/
+x11_flutter/
 depot_tools/
-build/
+termux-flutter/
