@@ -20,8 +20,6 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:wakelock_plus/wakelock_plus.dart';
 import 'package:device_info_plus/device_info_plus.dart';
 import 'package:xodos/l10n/app_localizations.dart';
-import 'package:avnc_flutter/avnc_flutter.dart';
-import 'package:x11_flutter/x11_flutter.dart';
 
 import 'spirited_mini_games.dart';
 import 'debug.dart';

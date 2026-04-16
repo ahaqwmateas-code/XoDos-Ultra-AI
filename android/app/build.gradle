@@ -12,15 +12,8 @@ if (localPropertiesFile.exists()) {
     }
 }
 
-def flutterVersionCode = localProperties.getProperty('flutter.versionCode')
-if (flutterVersionCode == null) {
-    flutterVersionCode = '2026'
-}
-
-def flutterVersionName = localProperties.getProperty('flutter.versionName')
-if (flutterVersionName == null) {
-    flutterVersionName = '2026.ULTRA.AI.V1'
-}
+def flutterVersionCode = localProperties.getProperty('flutter.versionCode') ?: '2026'
+def flutterVersionName = localProperties.getProperty('flutter.versionName') ?: '2026.ULTRA.AI.V1'
 
 def keystoreProperties = new Properties()
 def keystorePropertiesFile = rootProject.file('keystore.properties')
@@ -29,10 +22,10 @@ if (keystorePropertiesFile.exists()) {
 }
 
 android {
-    // Identity updated to Ahaqwmateas Elite
     namespace "com.ahaqwmateas.xodos"
-    compileSdkVersion flutter.compileSdkVersion
-    ndkVersion "27.0.12077973"  // flutter.ndkVersion
+
+    compileSdkVersion 34
+    ndkVersion "27.0.12077973"
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17
@@ -40,7 +33,7 @@ android {
     }
 
     kotlinOptions {
-        jvmTarget = 17
+        jvmTarget = "17"
     }
 
     sourceSets {
@@ -49,17 +42,15 @@ android {
     }
 
     defaultConfig {
-        // Your Unique Futuristic Identity
         applicationId "com.ahaqwmateas.xodos.elite"
-        
-        minSdk 28 
-        targetSdk 28 
-    versionCode 20260414
-    versionName "2026.ULTRA.AI.V1.FINAL"
 
-        buildConfigField "String", "COMMIT", "\"" + ("git rev-parse HEAD\n".execute().getText().trim() ?: (System.getenv('CURRENT_COMMIT') ?: "NO_COMMIT")) + "\""
+        minSdk 21
+        targetSdk 34
 
+        versionCode 20260414
+        versionName "2026.ULTRA.AI.V1.FINAL"
     }
+
     signingConfigs {
         release {
             keyAlias keystoreProperties['keyAlias']
@@ -76,11 +67,11 @@ android {
             shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+
         debug {
             signingConfig signingConfigs.debug
-            minifyEnabled true
+            minifyEnabled false
             shrinkResources false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
 
@@ -90,21 +81,13 @@ android {
         viewBinding true
         buildConfig true
     }
-    
 
     lint {
-        disable "NullSafeMutableLiveData"
-    }
-
-    lintOptions {
         abortOnError false
     }
 
     packagingOptions {
-        pickFirst 'lib/arm64-v8a/libc++_shared.so'
-        pickFirst 'lib/x86_64/libc++_shared.so'
-        pickFirst 'lib/armeabi-v7a/libc++_shared.so'
-        pickFirst 'lib/arm64-v8a/libc++_shared.so'
+        pickFirst 'lib/**/libc++_shared.so'
     }
 }
 
@@ -115,7 +98,6 @@ flutter {
 dependencies {
     implementation "androidx.core:core-ktx:1.15.0"
     implementation "androidx.appcompat:appcompat:1.7.0"
-    implementation "com.google.android.material:material:1.7.0"
+    implementation "com.google.android.material:material:1.12.0"
     implementation 'com.github.tiann:FreeReflection:3.2.2'
 }
-

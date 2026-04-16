@@ -8,8 +8,6 @@ import 'package:flutter/services.dart'; // Add this
 import 'package:url_launcher/url_launcher.dart';
 import 'package:wakelock_plus/wakelock_plus.dart';
 import 'package:xterm/xterm.dart';
-import 'package:avnc_flutter/avnc_flutter.dart';
-import 'package:x11_flutter/x11_flutter.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:network_info_plus/network_info_plus.dart';
