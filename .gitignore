@@ -1,0 +1,40 @@
+# Flutter/Dart
+.dart_tool/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+pubspec.lock
+
+# Android
+android/.gradle/
+android/app/build/
+
+# iOS
+ios/Pods/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Runner.xcworkspace
+
+# Linux/Windows/Mac build outputs
+linux/build/
+windows/build/
+macos/build/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Logs
+*.log
+
+# Generated
+**/GeneratedPluginRegistrant.*
+
+# Termux / custom toolchains
+termux-flutter/
+depot_tools/
+build/
