@@ -51,7 +51,7 @@ android:requestLegacyExternalStorage="true"
 android:name="bin.mt.file.content.MTDataFilesProvider"
 android:permission="android.permission.MANAGE_DOCUMENTS"
 android:exported="true"
-android:authorities="com.ahaqwmateas.xodos.elite.MTDataFilesProvider"
+android:authorities="com.ahaqwmateas_code.xodos.elite.MTDataFilesProvider"
 android:grantUriPermissions="true">
 <intent-filter>
 <action

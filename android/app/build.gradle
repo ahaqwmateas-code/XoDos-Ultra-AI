@@ -22,7 +22,7 @@ if (keystorePropertiesFile.exists()) {
 }
 
 android {
-    namespace "com.ahaqwmateas-code.xodos"
+    namespace "com.ahaqwmateas_code.xodos"
 
     compileSdkVersion 34
     ndkVersion "27.0.12077973"
@@ -42,7 +42,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.ahaqwmateas.xodos.elite"
+        applicationId "com.ahaqwmateas_code.xodos.elite"
 
         minSdk 21
         targetSdk 34
