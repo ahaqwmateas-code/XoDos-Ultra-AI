@@ -41,6 +41,5 @@ macos/build/
 
 # Embedded / toolchain modules (MISSING BEFORE - FIXED)
 terminal_flutter/
-x11_flutter/
 depot_tools/
 termux-flutter/
