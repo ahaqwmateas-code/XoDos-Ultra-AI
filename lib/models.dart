@@ -129,7 +129,61 @@ class XodosFileChunk {
   });
 }
 
+// --- XODOS PROFILE CLASS (For Gaming/Workstation Profiles) ---
+class XodosProfile {
+  final String id;
+  final String name;
+  final int quality;
+  final String? deviceId;
+  final DateTime createdAt;
+
+  XodosProfile({
+    required this.id,
+    required this.name,
+    required this.quality,
+    this.deviceId,
+    required this.createdAt,
+  });
+
+  // Factory constructor to create a new profile
+  factory XodosProfile.createNew({
+    required String name,
+    required int quality,
+    String? deviceId,
+  }) {
+    return XodosProfile(
+      id: DateTime.now().millisecondsSinceEpoch.toString(),
+      name: name,
+      quality: quality,
+      deviceId: deviceId,
+      createdAt: DateTime.now(),
+    );
+  }
+
+  // Convert to JSON for storage
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'name': name,
+    'quality': quality,
+    'deviceId': deviceId,
+    'createdAt': createdAt.toIso8601String(),
+  };
+
+  // Create from JSON
+  factory XodosProfile.fromJson(Map<String, dynamic> json) => XodosProfile(
+    id: json['id'] ?? '',
+    name: json['name'] ?? 'Unknown Profile',
+    quality: json['quality'] ?? 1,
+    deviceId: json['deviceId'],
+    createdAt: json['createdAt'] != null 
+      ? DateTime.parse(json['createdAt'])
+      : DateTime.now(),
+  );
+}
+
 // --- MASTER DATA LISTS ---
+List<XodosProfile> userAdditions = [];
+
 List<XodosStorageProvider> connectedClouds = [
   XodosStorageProvider(providerId: 'google', freeQuotaGB: 15),
   XodosStorageProvider(providerId: 'onedrive', freeQuotaGB: 5),

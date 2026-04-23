@@ -11,6 +11,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:uuid/uuid.dart';
 import 'core_classes.dart';
 import 'constants.dart';
+import 'profile_integration.dart';
 
 /// XoDos Ultra AI - The core engine for futuristic intelligence, 
 /// automation, and high-performance processing.
@@ -40,6 +41,9 @@ class UltraAI {
     
     // Start background self-healing monitor
     _startSelfHealingMonitor();
+
+    // Initialize the Profile System
+    await ProfileManager().initialize();
     
     _isInitialized = true;
   }

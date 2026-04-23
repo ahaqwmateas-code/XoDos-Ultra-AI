@@ -22,6 +22,7 @@ import 'spirited_mini_games.dart';
 import 'dialogs.dart';
 import 'debug.dart';
 import 'ultra_ai.dart'; // XoDos Ultra AI Integration
+import 'dashboard_screen.dart'; // Profiles Dashboard
 
 import 'package:xodos/l10n/app_localizations.dart';
 
@@ -73,8 +74,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 builder: (context, value, child) {
                   return IndexedStack(
                     index: G.pageIndex.value,
-                    children: const [
-                      Column(
+                    children: [
+                      const Column(
                         children: [
                           Padding(
                             padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
@@ -83,7 +84,8 @@ class _MyHomePageState extends State<MyHomePage> {
                           Expanded(child: TerminalPage()),
                         ],
                       ),
-                      Padding(
+                      XodosDashboard(), // Workstation Profiles Dashboard
+                      const Padding(
                         padding: EdgeInsets.all(8),
                         child: AspectRatioMax1To1(
                           child: Scrollbar(
@@ -108,7 +110,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                           children: [
                                             SettingPage(),
                                             const SizedBox(height: 16),
-                                            const UltraHealthMonitor(), // New Futuristic System Health
+                                            UltraHealthMonitor(), // New Futuristic System Health
                                             const SizedBox(height: 16),
                                             InfoPage(openFirstInfo: false),
                                           ],
@@ -136,6 +138,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 selectedIndex: G.pageIndex.value,
                 destinations: [
                   NavigationDestination(icon: const Icon(Icons.monitor), label: AppLocalizations.of(context)!.terminal),
+                  const NavigationDestination(icon: Icon(Icons.dashboard_customize), label: "Profiles"),
                   NavigationDestination(icon: const Icon(Icons.video_settings), label: AppLocalizations.of(context)!.control),
                 ],
                 onDestinationSelected: (index) {
