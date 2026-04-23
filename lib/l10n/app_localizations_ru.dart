@@ -415,146 +415,142 @@ class AppLocalizationsRu extends AppLocalizations {
   String get installCommandsSection => 'Быстрые команды';
 
   @override
-  String get backupRestore => 'Резервное копирование и восстановление';
+  String get backupRestore => 'Backup & Restore';
 
   @override
-  String get backup => 'Резервная копия';
+  String get backup => 'Backup';
 
   @override
-  String get restore => 'Восстановить';
+  String get restore => 'Restore';
 
   @override
-  String get backupSystem => 'Резервное копирование системы';
+  String get backupSystem => 'Backup System';
 
   @override
-  String get restoreSystem => 'Восстановление системы';
+  String get restoreSystem => 'Restore System';
 
   @override
-  String get systemBackupRestore =>
-      'Резервное копирование и восстановление системы';
+  String get systemBackupRestore => 'System Backup & Restore';
 
   @override
-  String get backupRestoreDescriptionShort =>
-      'Создайте резервную копию или восстановите систему';
+  String get backupRestoreDescriptionShort => 'Backup or restore your system';
 
   @override
   String get backupRestoreDescription =>
-      'Создайте резервную копию системы или восстановите её из предыдущей копии. Установки Wine также можно восстановить.';
+      'Create a backup of your system or restore from a previous backup. Wine installations can also be restored.';
 
   @override
   String get backupRestoreWarning =>
-      'Предупреждение: Восстановление резервной копии перезапишет существующие системные файлы. Убедитесь, что у вас есть актуальная копия.';
+      'Warning: Restoring a backup will overwrite existing system files. Make sure you have a current backup before proceeding.';
 
   @override
   String get backupNote =>
-      'Примечание: Файлы резервных копий сохраняются в /sd/xodos2backup.tar.xz';
+      'Note: Backup files are saved to /sd/xodos2backup.tar.xz';
 
   @override
-  String get confirmBackup => 'Подтвердить резервное копирование';
+  String get confirmBackup => 'Confirm Backup';
 
   @override
   String get backupConfirmation =>
-      'Система будет сохранена в /sd/xodos2backup.tar.xz. Продолжить?';
+      'This will backup the system to /sd/xodos2backup.tar.xz. Continue?';
 
   @override
-  String get backupInProgress => 'Выполняется резервное копирование...';
+  String get backupInProgress => 'Backup in progress...';
 
   @override
-  String get backupComplete => 'Резервное копирование успешно завершено!';
+  String get backupComplete => 'Backup completed successfully!';
 
   @override
-  String get backupFailed => 'Ошибка резервного копирования';
+  String get backupFailed => 'Backup failed';
 
   @override
-  String get systemRestore => 'Восстановление системы';
+  String get systemRestore => 'System Restore';
 
   @override
   String get systemRestoreWarning =>
-      'Система будет восстановлена из резервной копии с перезаписью файлов. Вы уверены?';
+      'This will restore the system from backup. This will overwrite existing system files. Are you sure?';
 
   @override
-  String get restoreInProgress => 'Выполняется восстановление...';
+  String get restoreInProgress => 'Restore in progress...';
 
   @override
-  String get restoreFailed => 'Ошибка восстановления';
+  String get restoreFailed => 'Restore failed';
 
   @override
-  String get installWine => 'Установить Wine';
+  String get installWine => 'Install Wine';
 
   @override
   String get wineInstallationWarning =>
-      'Wine будет установлен в систему x86_64 и заменён, если уже существует. Вы уверены?';
+      'This will install Wine into the system x86_64 and replace if exists. Are you sure?';
 
   @override
-  String get installingWine => 'Установка Wine...';
+  String get installingWine => 'Installing Wine...';
 
   @override
-  String get wineInstallationFailed => 'Ошибка установки Wine';
+  String get wineInstallationFailed => 'Wine installation failed';
 
   @override
-  String get fileSelectionFailed => 'Ошибка выбора файла';
+  String get fileSelectionFailed => 'File selection failed';
 
   @override
-  String get restartRequired => 'Требуется перезапуск';
+  String get restartRequired => 'Restart Required';
 
   @override
-  String get restartAppToApply =>
-      'Перезапустите приложение, чтобы применить изменения.';
+  String get restartAppToApply => 'Please restart the app to apply changes.';
 
   @override
-  String get close => 'Закрыть';
+  String get close => 'Close';
 
   @override
-  String get install => 'Установить';
+  String get install => 'Install';
 
   @override
-  String get ok => 'ОК';
+  String get ok => 'OK';
 
   @override
-  String get invalidPath => 'Неверный путь';
+  String get invalidPath => 'Invalid path';
 
   @override
-  String get unsupportedFormat => 'Неподдерживаемый формат';
+  String get unsupportedFormat => 'Unsupported file format';
 
   @override
   String get backupRestoreHint =>
-      'Резервная копия создаёт /sd/xodos2backup.tar.xz\nВосстановление поддерживает .tar, .tar.gz, .tar.xz\nАрхивы Wine будут установлены в /opt/wine';
+      'Backup creates /sd/xodos2backup.tar.xz\nRestore supports .tar, .tar.gz, .tar.xz files\nWine archives will be installed to /opt/wine';
 
   @override
-  String get wineInstallationComplete => 'Установка Wine завершена!';
+  String get wineInstallationComplete => 'Wine installation complete!';
 
   @override
-  String get restoreComplete => 'Восстановление системы завершено!';
+  String get restoreComplete => 'System restore complete!';
 
   @override
-  String get checkTerminalForProgress =>
-      'Проверьте терминал для просмотра прогресса...';
+  String get checkTerminalForProgress => 'Check terminal for progress...';
 
   @override
-  String get importantNote => 'Важное примечание';
+  String get importantNote => 'Important Note';
 
   @override
-  String get enableAndroidVenus => 'Включить ANDROID_VENUS=1';
+  String get enableAndroidVenus => 'Enable ANDROID_VENUS=1';
 
   @override
   String get androidVenusHint =>
-      'Добавьте переменную окружения ANDROID_VENUS=1 в команду сервера Venus';
+      'Add ANDROID_VENUS=1 environment variable to Venus server command';
 
   @override
   String get venusSection => 'Venus (Vulkan)';
 
   @override
   String get venusAdvantages =>
-      'Аппаратное ускорение Vulkan с использованием драйвера Vulkan Android';
+      'Vulkan-based hardware acceleration using Android\'s Vulkan driver';
 
   @override
-  String get venusServerParams => 'Параметры сервера Venus';
+  String get venusServerParams => 'Venus server parameters';
 
   @override
-  String get venusEnvVar => 'Переменные окружения Venus';
+  String get venusEnvVar => 'Venus environment variables';
 
   @override
-  String get enableVenus => 'Включить Venus (Android Vulkan)';
+  String get enableVenus => 'Enable Venus (Android Vulkan)';
 
   @override
   String get virglSection => 'VirGL (OpenGL)';

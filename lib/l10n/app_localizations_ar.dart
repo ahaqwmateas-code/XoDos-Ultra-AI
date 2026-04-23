@@ -414,143 +414,142 @@ class AppLocalizationsAr extends AppLocalizations {
   String get installCommandsSection => 'أوامر سريعة';
 
   @override
-  String get backupRestore => 'النسخ الاحتياطي والاستعادة';
+  String get backupRestore => 'Backup & Restore';
 
   @override
-  String get backup => 'نسخ احتياطي';
+  String get backup => 'Backup';
 
   @override
-  String get restore => 'استعادة';
+  String get restore => 'Restore';
 
   @override
-  String get backupSystem => 'نسخ النظام احتياطيًا';
+  String get backupSystem => 'Backup System';
 
   @override
-  String get restoreSystem => 'استعادة النظام';
+  String get restoreSystem => 'Restore System';
 
   @override
-  String get systemBackupRestore => 'نسخ النظام احتياطيًا واستعادته';
+  String get systemBackupRestore => 'System Backup & Restore';
 
   @override
-  String get backupRestoreDescriptionShort =>
-      'قم بنسخ النظام احتياطيًا أو استعادته';
+  String get backupRestoreDescriptionShort => 'Backup or restore your system';
 
   @override
   String get backupRestoreDescription =>
-      'أنشئ نسخة احتياطية من النظام أو استعد من نسخة سابقة. يمكن أيضًا استعادة تثبيتات Wine.';
+      'Create a backup of your system or restore from a previous backup. Wine installations can also be restored.';
 
   @override
   String get backupRestoreWarning =>
-      'تحذير: استعادة النسخة الاحتياطية ستؤدي إلى استبدال ملفات النظام الحالية. تأكد من وجود نسخة حديثة قبل المتابعة.';
+      'Warning: Restoring a backup will overwrite existing system files. Make sure you have a current backup before proceeding.';
 
   @override
   String get backupNote =>
-      'ملاحظة: يتم حفظ ملفات النسخ الاحتياطي في /sd/xodos2backup.tar.xz';
+      'Note: Backup files are saved to /sd/xodos2backup.tar.xz';
 
   @override
-  String get confirmBackup => 'تأكيد النسخ الاحتياطي';
+  String get confirmBackup => 'Confirm Backup';
 
   @override
   String get backupConfirmation =>
-      'سيتم نسخ النظام احتياطيًا إلى /sd/xodos2backup.tar.xz. هل تريد المتابعة؟';
+      'This will backup the system to /sd/xodos2backup.tar.xz. Continue?';
 
   @override
-  String get backupInProgress => 'جاري النسخ الاحتياطي...';
+  String get backupInProgress => 'Backup in progress...';
 
   @override
-  String get backupComplete => 'اكتمل النسخ الاحتياطي بنجاح!';
+  String get backupComplete => 'Backup completed successfully!';
 
   @override
-  String get backupFailed => 'فشل النسخ الاحتياطي';
+  String get backupFailed => 'Backup failed';
 
   @override
-  String get systemRestore => 'استعادة النظام';
+  String get systemRestore => 'System Restore';
 
   @override
   String get systemRestoreWarning =>
-      'سيتم استعادة النظام من النسخة الاحتياطية مع استبدال الملفات الحالية. هل أنت متأكد؟';
+      'This will restore the system from backup. This will overwrite existing system files. Are you sure?';
 
   @override
-  String get restoreInProgress => 'جاري الاستعادة...';
+  String get restoreInProgress => 'Restore in progress...';
 
   @override
-  String get restoreFailed => 'فشلت الاستعادة';
+  String get restoreFailed => 'Restore failed';
 
   @override
-  String get installWine => 'تثبيت Wine';
+  String get installWine => 'Install Wine';
 
   @override
   String get wineInstallationWarning =>
-      'سيتم تثبيت Wine في نظام x86_64 واستبداله إذا كان موجودًا. هل أنت متأكد؟';
+      'This will install Wine into the system x86_64 and replace if exists. Are you sure?';
 
   @override
-  String get installingWine => 'جاري تثبيت Wine...';
+  String get installingWine => 'Installing Wine...';
 
   @override
-  String get wineInstallationFailed => 'فشل تثبيت Wine';
+  String get wineInstallationFailed => 'Wine installation failed';
 
   @override
-  String get fileSelectionFailed => 'فشل اختيار الملف';
+  String get fileSelectionFailed => 'File selection failed';
 
   @override
-  String get restartRequired => 'إعادة التشغيل مطلوبة';
+  String get restartRequired => 'Restart Required';
 
   @override
-  String get restartAppToApply => 'يرجى إعادة تشغيل التطبيق لتطبيق التغييرات.';
+  String get restartAppToApply => 'Please restart the app to apply changes.';
 
   @override
-  String get close => 'إغلاق';
+  String get close => 'Close';
 
   @override
-  String get install => 'تثبيت';
+  String get install => 'Install';
 
   @override
-  String get ok => 'موافق';
+  String get ok => 'OK';
 
   @override
-  String get invalidPath => 'مسار غير صالح';
+  String get invalidPath => 'Invalid path';
 
   @override
-  String get unsupportedFormat => 'تنسيق غير مدعوم';
+  String get unsupportedFormat => 'Unsupported file format';
 
   @override
   String get backupRestoreHint =>
-      'ينشئ النسخ الاحتياطي /sd/xodos2backup.tar.xz\nتدعم الاستعادة ملفات .tar و .tar.gz و .tar.xz\nسيتم تثبيت أرشيفات Wine في /opt/wine';
+      'Backup creates /sd/xodos2backup.tar.xz\nRestore supports .tar, .tar.gz, .tar.xz files\nWine archives will be installed to /opt/wine';
 
   @override
-  String get wineInstallationComplete => 'اكتمل تثبيت Wine!';
+  String get wineInstallationComplete => 'Wine installation complete!';
 
   @override
-  String get restoreComplete => 'اكتملت استعادة النظام!';
+  String get restoreComplete => 'System restore complete!';
 
   @override
-  String get checkTerminalForProgress => 'تحقق من الطرفية لمعرفة التقدم...';
+  String get checkTerminalForProgress => 'Check terminal for progress...';
 
   @override
-  String get importantNote => 'ملاحظة مهمة';
+  String get importantNote => 'Important Note';
 
   @override
-  String get enableAndroidVenus => 'تفعيل ANDROID_VENUS=1';
+  String get enableAndroidVenus => 'Enable ANDROID_VENUS=1';
 
   @override
   String get androidVenusHint =>
-      'أضف متغير البيئة ANDROID_VENUS=1 إلى أمر خادم Venus';
+      'Add ANDROID_VENUS=1 environment variable to Venus server command';
 
   @override
   String get venusSection => 'Venus (Vulkan)';
 
   @override
   String get venusAdvantages =>
-      'تسريع عتادي قائم على Vulkan باستخدام برنامج تشغيل Vulkan الخاص بنظام Android';
+      'Vulkan-based hardware acceleration using Android\'s Vulkan driver';
 
   @override
-  String get venusServerParams => 'معلمات خادم Venus';
+  String get venusServerParams => 'Venus server parameters';
 
   @override
-  String get venusEnvVar => 'متغيرات بيئة Venus';
+  String get venusEnvVar => 'Venus environment variables';
 
   @override
-  String get enableVenus => 'تفعيل Venus (Vulkan الخاص بـ Android)';
+  String get enableVenus => 'Enable Venus (Android Vulkan)';
 
   @override
   String get virglSection => 'VirGL (OpenGL)';

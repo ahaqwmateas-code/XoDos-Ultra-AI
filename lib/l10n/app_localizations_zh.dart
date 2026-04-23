@@ -407,138 +407,145 @@ class AppLocalizationsZh extends AppLocalizations {
   String get installCommandsSection => '快速命令';
 
   @override
-  String get backupRestore => '备份与恢复';
+  String get backupRestore => 'Backup & Restore';
 
   @override
-  String get backup => '备份';
+  String get backup => 'Backup';
 
   @override
-  String get restore => '恢复';
+  String get restore => 'Restore';
 
   @override
-  String get backupSystem => '系统备份';
+  String get backupSystem => 'Backup System';
 
   @override
-  String get restoreSystem => '系统恢复';
+  String get restoreSystem => 'Restore System';
 
   @override
-  String get systemBackupRestore => '系统备份与恢复';
+  String get systemBackupRestore => 'System Backup & Restore';
 
   @override
-  String get backupRestoreDescriptionShort => '备份或恢复您的系统';
+  String get backupRestoreDescriptionShort => 'Backup or restore your system';
 
   @override
-  String get backupRestoreDescription => '创建系统备份或从以前的备份中恢复。Wine 安装也可以恢复。';
+  String get backupRestoreDescription =>
+      'Create a backup of your system or restore from a previous backup. Wine installations can also be restored.';
 
   @override
-  String get backupRestoreWarning => '警告：恢复备份将覆盖现有的系统文件。继续之前请确保已有最新备份。';
+  String get backupRestoreWarning =>
+      'Warning: Restoring a backup will overwrite existing system files. Make sure you have a current backup before proceeding.';
 
   @override
-  String get backupNote => '注意：备份文件保存在 /sd/xodos2backup.tar.xz';
+  String get backupNote =>
+      'Note: Backup files are saved to /sd/xodos2backup.tar.xz';
 
   @override
-  String get confirmBackup => '确认备份';
+  String get confirmBackup => 'Confirm Backup';
 
   @override
-  String get backupConfirmation => '这将把系统备份到 /sd/xodos2backup.tar.xz。是否继续？';
+  String get backupConfirmation =>
+      'This will backup the system to /sd/xodos2backup.tar.xz. Continue?';
 
   @override
-  String get backupInProgress => '正在备份...';
+  String get backupInProgress => 'Backup in progress...';
 
   @override
-  String get backupComplete => '备份成功完成！';
+  String get backupComplete => 'Backup completed successfully!';
 
   @override
-  String get backupFailed => '备份失败';
+  String get backupFailed => 'Backup failed';
 
   @override
-  String get systemRestore => '系统恢复';
+  String get systemRestore => 'System Restore';
 
   @override
-  String get systemRestoreWarning => '这将从备份中恢复系统并覆盖现有文件。确定要继续吗？';
+  String get systemRestoreWarning =>
+      'This will restore the system from backup. This will overwrite existing system files. Are you sure?';
 
   @override
-  String get restoreInProgress => '正在恢复...';
+  String get restoreInProgress => 'Restore in progress...';
 
   @override
-  String get restoreFailed => '恢复失败';
+  String get restoreFailed => 'Restore failed';
 
   @override
-  String get installWine => '安装 Wine';
+  String get installWine => 'Install Wine';
 
   @override
   String get wineInstallationWarning =>
-      '这将把 Wine 安装到 x86_64 系统中，如已存在将被替换。是否确认？';
+      'This will install Wine into the system x86_64 and replace if exists. Are you sure?';
 
   @override
-  String get installingWine => '正在安装 Wine...';
+  String get installingWine => 'Installing Wine...';
 
   @override
-  String get wineInstallationFailed => 'Wine 安装失败';
+  String get wineInstallationFailed => 'Wine installation failed';
 
   @override
-  String get fileSelectionFailed => '文件选择失败';
+  String get fileSelectionFailed => 'File selection failed';
 
   @override
-  String get restartRequired => '需要重启';
+  String get restartRequired => 'Restart Required';
 
   @override
-  String get restartAppToApply => '请重启应用以应用更改。';
+  String get restartAppToApply => 'Please restart the app to apply changes.';
 
   @override
-  String get close => '关闭';
+  String get close => 'Close';
 
   @override
-  String get install => '安装';
+  String get install => 'Install';
 
   @override
-  String get ok => '确定';
+  String get ok => 'OK';
 
   @override
-  String get invalidPath => '路径无效';
+  String get invalidPath => 'Invalid path';
 
   @override
-  String get unsupportedFormat => '不支持的文件格式';
+  String get unsupportedFormat => 'Unsupported file format';
 
   @override
   String get backupRestoreHint =>
-      '备份会创建 /sd/xodos2backup.tar.xz\n恢复支持 .tar、.tar.gz、.tar.xz 文件\nWine 压缩包将安装到 /opt/wine';
+      'Backup creates /sd/xodos2backup.tar.xz\nRestore supports .tar, .tar.gz, .tar.xz files\nWine archives will be installed to /opt/wine';
 
   @override
-  String get wineInstallationComplete => 'Wine 安装完成！';
+  String get wineInstallationComplete => 'Wine installation complete!';
 
   @override
-  String get restoreComplete => '系统恢复完成！';
+  String get restoreComplete => 'System restore complete!';
 
   @override
-  String get checkTerminalForProgress => '请在终端查看进度...';
+  String get checkTerminalForProgress => 'Check terminal for progress...';
 
   @override
-  String get importantNote => '重要提示';
+  String get importantNote => 'Important Note';
 
   @override
-  String get enableAndroidVenus => '启用 ANDROID_VENUS=1';
+  String get enableAndroidVenus => 'Enable ANDROID_VENUS=1';
 
   @override
-  String get androidVenusHint => '在 Venus 服务器命令中添加 ANDROID_VENUS=1 环境变量';
+  String get androidVenusHint =>
+      'Add ANDROID_VENUS=1 environment variable to Venus server command';
 
   @override
-  String get venusSection => 'Venus（Vulkan）';
+  String get venusSection => 'Venus (Vulkan)';
 
   @override
-  String get venusAdvantages => '使用 Android Vulkan 驱动的 Vulkan 硬件加速';
+  String get venusAdvantages =>
+      'Vulkan-based hardware acceleration using Android\'s Vulkan driver';
 
   @override
-  String get venusServerParams => 'Venus 服务器参数';
+  String get venusServerParams => 'Venus server parameters';
 
   @override
-  String get venusEnvVar => 'Venus 环境变量';
+  String get venusEnvVar => 'Venus environment variables';
 
   @override
-  String get enableVenus => '启用 Venus（Android Vulkan）';
+  String get enableVenus => 'Enable Venus (Android Vulkan)';
 
   @override
-  String get virglSection => 'VirGL（OpenGL）';
+  String get virglSection => 'VirGL (OpenGL)';
 }
 
 /// The translations for Chinese, using the Han script (`zh_Hant`).
@@ -944,136 +951,143 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get installCommandsSection => '快速命令';
 
   @override
-  String get backupRestore => '备份与恢复';
+  String get backupRestore => 'Backup & Restore';
 
   @override
-  String get backup => '备份';
+  String get backup => 'Backup';
 
   @override
-  String get restore => '恢复';
+  String get restore => 'Restore';
 
   @override
-  String get backupSystem => '系统备份';
+  String get backupSystem => 'Backup System';
 
   @override
-  String get restoreSystem => '系统恢复';
+  String get restoreSystem => 'Restore System';
 
   @override
-  String get systemBackupRestore => '系统备份与恢复';
+  String get systemBackupRestore => 'System Backup & Restore';
 
   @override
-  String get backupRestoreDescriptionShort => '备份或恢复您的系统';
+  String get backupRestoreDescriptionShort => 'Backup or restore your system';
 
   @override
-  String get backupRestoreDescription => '创建系统备份或从以前的备份中恢复。Wine 安装也可以恢复。';
+  String get backupRestoreDescription =>
+      'Create a backup of your system or restore from a previous backup. Wine installations can also be restored.';
 
   @override
-  String get backupRestoreWarning => '警告：恢复备份将覆盖现有的系统文件。继续之前请确保已有最新备份。';
+  String get backupRestoreWarning =>
+      'Warning: Restoring a backup will overwrite existing system files. Make sure you have a current backup before proceeding.';
 
   @override
-  String get backupNote => '注意：备份文件保存在 /sd/xodos2backup.tar.xz';
+  String get backupNote =>
+      'Note: Backup files are saved to /sd/xodos2backup.tar.xz';
 
   @override
-  String get confirmBackup => '确认备份';
+  String get confirmBackup => 'Confirm Backup';
 
   @override
-  String get backupConfirmation => '这将把系统备份到 /sd/xodos2backup.tar.xz。是否继续？';
+  String get backupConfirmation =>
+      'This will backup the system to /sd/xodos2backup.tar.xz. Continue?';
 
   @override
-  String get backupInProgress => '正在备份...';
+  String get backupInProgress => 'Backup in progress...';
 
   @override
-  String get backupComplete => '备份成功完成！';
+  String get backupComplete => 'Backup completed successfully!';
 
   @override
-  String get backupFailed => '备份失败';
+  String get backupFailed => 'Backup failed';
 
   @override
-  String get systemRestore => '系统恢复';
+  String get systemRestore => 'System Restore';
 
   @override
-  String get systemRestoreWarning => '这将从备份中恢复系统并覆盖现有文件。确定要继续吗？';
+  String get systemRestoreWarning =>
+      'This will restore the system from backup. This will overwrite existing system files. Are you sure?';
 
   @override
-  String get restoreInProgress => '正在恢复...';
+  String get restoreInProgress => 'Restore in progress...';
 
   @override
-  String get restoreFailed => '恢复失败';
+  String get restoreFailed => 'Restore failed';
 
   @override
-  String get installWine => '安装 Wine';
+  String get installWine => 'Install Wine';
 
   @override
   String get wineInstallationWarning =>
-      '这将把 Wine 安装到 x86_64 系统中，如已存在将被替换。是否确认？';
+      'This will install Wine into the system x86_64 and replace if exists. Are you sure?';
 
   @override
-  String get installingWine => '正在安装 Wine...';
+  String get installingWine => 'Installing Wine...';
 
   @override
-  String get wineInstallationFailed => 'Wine 安装失败';
+  String get wineInstallationFailed => 'Wine installation failed';
 
   @override
-  String get fileSelectionFailed => '文件选择失败';
+  String get fileSelectionFailed => 'File selection failed';
 
   @override
-  String get restartRequired => '需要重启';
+  String get restartRequired => 'Restart Required';
 
   @override
-  String get restartAppToApply => '请重启应用以应用更改。';
+  String get restartAppToApply => 'Please restart the app to apply changes.';
 
   @override
-  String get close => '关闭';
+  String get close => 'Close';
 
   @override
-  String get install => '安装';
+  String get install => 'Install';
 
   @override
-  String get ok => '确定';
+  String get ok => 'OK';
 
   @override
-  String get invalidPath => '路径无效';
+  String get invalidPath => 'Invalid path';
 
   @override
-  String get unsupportedFormat => '不支持的文件格式';
+  String get unsupportedFormat => 'Unsupported file format';
 
   @override
   String get backupRestoreHint =>
-      '备份会创建 /sd/xodos2backup.tar.xz\n恢复支持 .tar、.tar.gz、.tar.xz 文件\nWine 压缩包将安装到 /opt/wine';
+      'Backup creates /sd/xodos2backup.tar.xz\nRestore supports .tar, .tar.gz, .tar.xz files\nWine archives will be installed to /opt/wine';
 
   @override
-  String get wineInstallationComplete => 'Wine 安装完成！';
+  String get wineInstallationComplete => 'Wine installation complete!';
 
   @override
-  String get restoreComplete => '系统恢复完成！';
+  String get restoreComplete => 'System restore complete!';
 
   @override
-  String get checkTerminalForProgress => '请在终端查看进度...';
+  String get checkTerminalForProgress => 'Check terminal for progress...';
 
   @override
-  String get importantNote => '重要提示';
+  String get importantNote => 'Important Note';
 
   @override
-  String get enableAndroidVenus => '启用 ANDROID_VENUS=1';
+  String get enableAndroidVenus => 'Enable ANDROID_VENUS=1';
 
   @override
-  String get androidVenusHint => '在 Venus 服务器命令中添加 ANDROID_VENUS=1 环境变量';
+  String get androidVenusHint =>
+      'Add ANDROID_VENUS=1 environment variable to Venus server command';
 
   @override
-  String get venusSection => 'Venus（Vulkan）';
+  String get venusSection => 'Venus (Vulkan)';
 
   @override
-  String get venusAdvantages => '使用 Android Vulkan 驱动的 Vulkan 硬件加速';
+  String get venusAdvantages =>
+      'Vulkan-based hardware acceleration using Android\'s Vulkan driver';
 
   @override
-  String get venusServerParams => 'Venus 服务器参数';
+  String get venusServerParams => 'Venus server parameters';
 
   @override
-  String get venusEnvVar => 'Venus 环境变量';
+  String get venusEnvVar => 'Venus environment variables';
 
   @override
-  String get enableVenus => '启用 Venus（Android Vulkan）';
+  String get enableVenus => 'Enable Venus (Android Vulkan)';
 
   @override
-  String get virglSection => 'VirGL（OpenGL）';
+  String get virglSection => 'VirGL (OpenGL)';
 }

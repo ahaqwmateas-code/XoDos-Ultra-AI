@@ -416,144 +416,142 @@ class AppLocalizationsHi extends AppLocalizations {
   String get installCommandsSection => 'त्वरित कमांड्स';
 
   @override
-  String get backupRestore => 'बैकअप और पुनर्स्थापना';
+  String get backupRestore => 'Backup & Restore';
 
   @override
-  String get backup => 'बैकअप';
+  String get backup => 'Backup';
 
   @override
-  String get restore => 'पुनर्स्थापित करें';
+  String get restore => 'Restore';
 
   @override
-  String get backupSystem => 'सिस्टम का बैकअप';
+  String get backupSystem => 'Backup System';
 
   @override
-  String get restoreSystem => 'सिस्टम पुनर्स्थापित करें';
+  String get restoreSystem => 'Restore System';
 
   @override
-  String get systemBackupRestore => 'सिस्टम बैकअप और पुनर्स्थापना';
+  String get systemBackupRestore => 'System Backup & Restore';
 
   @override
-  String get backupRestoreDescriptionShort =>
-      'अपने सिस्टम का बैकअप लें या पुनर्स्थापित करें';
+  String get backupRestoreDescriptionShort => 'Backup or restore your system';
 
   @override
   String get backupRestoreDescription =>
-      'अपने सिस्टम का बैकअप बनाएं या पिछले बैकअप से पुनर्स्थापित करें। Wine इंस्टॉलेशन भी पुनर्स्थापित किए जा सकते हैं।';
+      'Create a backup of your system or restore from a previous backup. Wine installations can also be restored.';
 
   @override
   String get backupRestoreWarning =>
-      'चेतावनी: बैकअप पुनर्स्थापित करने से मौजूदा सिस्टम फ़ाइलें ओवरराइट हो जाएंगी। आगे बढ़ने से पहले सुनिश्चित करें कि आपके पास नया बैकअप है।';
+      'Warning: Restoring a backup will overwrite existing system files. Make sure you have a current backup before proceeding.';
 
   @override
   String get backupNote =>
-      'नोट: बैकअप फ़ाइलें /sd/xodos2backup.tar.xz में सहेजी जाती हैं';
+      'Note: Backup files are saved to /sd/xodos2backup.tar.xz';
 
   @override
-  String get confirmBackup => 'बैकअप की पुष्टि करें';
+  String get confirmBackup => 'Confirm Backup';
 
   @override
   String get backupConfirmation =>
-      'यह सिस्टम का बैकअप /sd/xodos2backup.tar.xz में बनाएगा। जारी रखें?';
+      'This will backup the system to /sd/xodos2backup.tar.xz. Continue?';
 
   @override
-  String get backupInProgress => 'बैकअप जारी है...';
+  String get backupInProgress => 'Backup in progress...';
 
   @override
-  String get backupComplete => 'बैकअप सफलतापूर्वक पूरा हुआ!';
+  String get backupComplete => 'Backup completed successfully!';
 
   @override
-  String get backupFailed => 'बैकअप विफल';
+  String get backupFailed => 'Backup failed';
 
   @override
-  String get systemRestore => 'सिस्टम पुनर्स्थापना';
+  String get systemRestore => 'System Restore';
 
   @override
   String get systemRestoreWarning =>
-      'यह सिस्टम को बैकअप से पुनर्स्थापित करेगा और मौजूदा फ़ाइलों को ओवरराइट करेगा। क्या आप सुनिश्चित हैं?';
+      'This will restore the system from backup. This will overwrite existing system files. Are you sure?';
 
   @override
-  String get restoreInProgress => 'पुनर्स्थापना जारी है...';
+  String get restoreInProgress => 'Restore in progress...';
 
   @override
-  String get restoreFailed => 'पुनर्स्थापना विफल';
+  String get restoreFailed => 'Restore failed';
 
   @override
-  String get installWine => 'Wine इंस्टॉल करें';
+  String get installWine => 'Install Wine';
 
   @override
   String get wineInstallationWarning =>
-      'यह Wine को सिस्टम x86_64 में इंस्टॉल करेगा और यदि मौजूद हो तो बदल देगा। क्या आप सुनिश्चित हैं?';
+      'This will install Wine into the system x86_64 and replace if exists. Are you sure?';
 
   @override
-  String get installingWine => 'Wine इंस्टॉल हो रहा है...';
+  String get installingWine => 'Installing Wine...';
 
   @override
-  String get wineInstallationFailed => 'Wine इंस्टॉलेशन विफल';
+  String get wineInstallationFailed => 'Wine installation failed';
 
   @override
-  String get fileSelectionFailed => 'फ़ाइल चयन विफल';
+  String get fileSelectionFailed => 'File selection failed';
 
   @override
-  String get restartRequired => 'रीस्टार्ट आवश्यक';
+  String get restartRequired => 'Restart Required';
 
   @override
-  String get restartAppToApply =>
-      'परिवर्तनों को लागू करने के लिए कृपया ऐप को रीस्टार्ट करें।';
+  String get restartAppToApply => 'Please restart the app to apply changes.';
 
   @override
-  String get close => 'बंद करें';
+  String get close => 'Close';
 
   @override
-  String get install => 'इंस्टॉल करें';
+  String get install => 'Install';
 
   @override
-  String get ok => 'ठीक है';
+  String get ok => 'OK';
 
   @override
-  String get invalidPath => 'अमान्य पथ';
+  String get invalidPath => 'Invalid path';
 
   @override
-  String get unsupportedFormat => 'असमर्थित फ़ाइल प्रारूप';
+  String get unsupportedFormat => 'Unsupported file format';
 
   @override
   String get backupRestoreHint =>
-      'बैकअप /sd/xodos2backup.tar.xz बनाता है\nरिस्टोर .tar, .tar.gz, .tar.xz फ़ाइलों को सपोर्ट करता है\nWine आर्काइव /opt/wine में इंस्टॉल होंगे';
+      'Backup creates /sd/xodos2backup.tar.xz\nRestore supports .tar, .tar.gz, .tar.xz files\nWine archives will be installed to /opt/wine';
 
   @override
-  String get wineInstallationComplete => 'Wine इंस्टॉलेशन पूरा हुआ!';
+  String get wineInstallationComplete => 'Wine installation complete!';
 
   @override
-  String get restoreComplete => 'सिस्टम पुनर्स्थापना पूरी हुई!';
+  String get restoreComplete => 'System restore complete!';
 
   @override
-  String get checkTerminalForProgress => 'प्रगति के लिए टर्मिनल जांचें...';
+  String get checkTerminalForProgress => 'Check terminal for progress...';
 
   @override
-  String get importantNote => 'महत्वपूर्ण नोट';
+  String get importantNote => 'Important Note';
 
   @override
-  String get enableAndroidVenus => 'ANDROID_VENUS=1 सक्षम करें';
+  String get enableAndroidVenus => 'Enable ANDROID_VENUS=1';
 
   @override
   String get androidVenusHint =>
-      'Venus सर्वर कमांड में ANDROID_VENUS=1 पर्यावरण वेरिएबल जोड़ें';
+      'Add ANDROID_VENUS=1 environment variable to Venus server command';
 
   @override
   String get venusSection => 'Venus (Vulkan)';
 
   @override
   String get venusAdvantages =>
-      'Android Vulkan ड्राइवर का उपयोग करके Vulkan आधारित हार्डवेयर एक्सेलेरेशन';
+      'Vulkan-based hardware acceleration using Android\'s Vulkan driver';
 
   @override
-  String get venusServerParams => 'Venus सर्वर पैरामीटर';
+  String get venusServerParams => 'Venus server parameters';
 
   @override
-  String get venusEnvVar => 'Venus पर्यावरण वेरिएबल';
+  String get venusEnvVar => 'Venus environment variables';
 
   @override
-  String get enableVenus => 'Venus सक्षम करें (Android Vulkan)';
+  String get enableVenus => 'Enable Venus (Android Vulkan)';
 
   @override
   String get virglSection => 'VirGL (OpenGL)';

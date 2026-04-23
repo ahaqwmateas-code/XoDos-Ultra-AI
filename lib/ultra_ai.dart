@@ -103,18 +103,25 @@ class UltraAI {
   // --- 4. FUTURISTIC STYLES & THEMES ---
 
   static ThemeData getFuturisticTheme(bool isDarkMode) {
-    final primaryColor = isDarkMode ? AppColors.primaryPurple : Colors.deepPurple;
+    final primaryColor = AppColors.primaryBlue;
     return ThemeData(
       useMaterial3: true,
       brightness: isDarkMode ? Brightness.dark : Brightness.light,
       colorSchemeSeed: primaryColor,
+      scaffoldBackgroundColor: isDarkMode ? const Color(0xFF001F3F) : const Color(0xFFF0F8FF),
+      appBarTheme: AppBarTheme(
+        backgroundColor: AppColors.primaryBlue,
+        foregroundColor: Colors.white,
+      ),
       cardTheme: CardTheme(
         elevation: 8,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-        color: isDarkMode ? AppColors.surfaceDark : Colors.white,
+        color: isDarkMode ? const Color(0xFF003366) : Colors.white,
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
+          backgroundColor: AppColors.primaryBlue,
+          foregroundColor: Colors.white,
           padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
         ),
@@ -140,13 +147,13 @@ class _UltraSearchSpaceState extends State<UltraSearchSpace> {
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: Colors.black26,
+        color: AppColors.primaryBlue.withOpacity(0.1),
         borderRadius: BorderRadius.circular(30),
-        border: Border.all(color: AppColors.primaryPurple.withOpacity(0.3)),
+        border: Border.all(color: AppColors.primaryBlue.withOpacity(0.3)),
       ),
       child: Row(
         children: [
-          const Icon(Icons.search, color: AppColors.primaryPurple),
+          const Icon(Icons.search, color: AppColors.primaryBlue),
           const SizedBox(width: 12),
           Expanded(
             child: TextField(
@@ -166,7 +173,7 @@ class _UltraSearchSpaceState extends State<UltraSearchSpace> {
           ),
           IconButton(
             icon: Icon(_isListening ? Icons.mic : Icons.mic_none, 
-              color: _isListening ? Colors.red : AppColors.primaryPurple),
+              color: _isListening ? Colors.red : AppColors.primaryBlue),
             onPressed: () async {
               setState(() => _isListening = !_isListening);
               if (_isListening) {
@@ -252,7 +259,7 @@ class SwitchListenable extends StatelessWidget {
       title: Text(title),
       value: value,
       onChanged: onChanged,
-      activeColor: AppColors.primaryPurple,
+      activeColor: AppColors.primaryBlue,
     );
   }
 }

@@ -408,141 +408,142 @@ class AppLocalizationsJa extends AppLocalizations {
   String get installCommandsSection => 'クイックコマンド';
 
   @override
-  String get backupRestore => 'バックアップと復元';
+  String get backupRestore => 'Backup & Restore';
 
   @override
-  String get backup => 'バックアップ';
+  String get backup => 'Backup';
 
   @override
-  String get restore => '復元';
+  String get restore => 'Restore';
 
   @override
-  String get backupSystem => 'システムをバックアップ';
+  String get backupSystem => 'Backup System';
 
   @override
-  String get restoreSystem => 'システムを復元';
+  String get restoreSystem => 'Restore System';
 
   @override
-  String get systemBackupRestore => 'システムのバックアップと復元';
+  String get systemBackupRestore => 'System Backup & Restore';
 
   @override
-  String get backupRestoreDescriptionShort => 'システムをバックアップまたは復元します';
+  String get backupRestoreDescriptionShort => 'Backup or restore your system';
 
   @override
   String get backupRestoreDescription =>
-      'システムのバックアップを作成するか、以前のバックアップから復元します。Wine のインストールも復元できます。';
+      'Create a backup of your system or restore from a previous backup. Wine installations can also be restored.';
 
   @override
   String get backupRestoreWarning =>
-      '警告: バックアップを復元すると、既存のシステムファイルが上書きされます。続行する前に最新のバックアップがあることを確認してください。';
+      'Warning: Restoring a backup will overwrite existing system files. Make sure you have a current backup before proceeding.';
 
   @override
-  String get backupNote => '注意: バックアップファイルは /sd/xodos2backup.tar.xz に保存されます';
+  String get backupNote =>
+      'Note: Backup files are saved to /sd/xodos2backup.tar.xz';
 
   @override
-  String get confirmBackup => 'バックアップを確認';
+  String get confirmBackup => 'Confirm Backup';
 
   @override
   String get backupConfirmation =>
-      'システムを /sd/xodos2backup.tar.xz にバックアップします。続行しますか？';
+      'This will backup the system to /sd/xodos2backup.tar.xz. Continue?';
 
   @override
-  String get backupInProgress => 'バックアップ中...';
+  String get backupInProgress => 'Backup in progress...';
 
   @override
-  String get backupComplete => 'バックアップが正常に完了しました！';
+  String get backupComplete => 'Backup completed successfully!';
 
   @override
-  String get backupFailed => 'バックアップに失敗しました';
+  String get backupFailed => 'Backup failed';
 
   @override
-  String get systemRestore => 'システム復元';
+  String get systemRestore => 'System Restore';
 
   @override
   String get systemRestoreWarning =>
-      'バックアップからシステムを復元し、既存のファイルを上書きします。本当によろしいですか？';
+      'This will restore the system from backup. This will overwrite existing system files. Are you sure?';
 
   @override
-  String get restoreInProgress => '復元中...';
+  String get restoreInProgress => 'Restore in progress...';
 
   @override
-  String get restoreFailed => '復元に失敗しました';
+  String get restoreFailed => 'Restore failed';
 
   @override
-  String get installWine => 'Wine をインストール';
+  String get installWine => 'Install Wine';
 
   @override
   String get wineInstallationWarning =>
-      'Wine を x86_64 システムにインストールし、既に存在する場合は置き換えます。よろしいですか？';
+      'This will install Wine into the system x86_64 and replace if exists. Are you sure?';
 
   @override
-  String get installingWine => 'Wine をインストール中...';
+  String get installingWine => 'Installing Wine...';
 
   @override
-  String get wineInstallationFailed => 'Wine のインストールに失敗しました';
+  String get wineInstallationFailed => 'Wine installation failed';
 
   @override
-  String get fileSelectionFailed => 'ファイルの選択に失敗しました';
+  String get fileSelectionFailed => 'File selection failed';
 
   @override
-  String get restartRequired => '再起動が必要です';
+  String get restartRequired => 'Restart Required';
 
   @override
-  String get restartAppToApply => '変更を適用するにはアプリを再起動してください。';
+  String get restartAppToApply => 'Please restart the app to apply changes.';
 
   @override
-  String get close => '閉じる';
+  String get close => 'Close';
 
   @override
-  String get install => 'インストール';
+  String get install => 'Install';
 
   @override
   String get ok => 'OK';
 
   @override
-  String get invalidPath => '無効なパス';
+  String get invalidPath => 'Invalid path';
 
   @override
-  String get unsupportedFormat => '未対応の形式';
+  String get unsupportedFormat => 'Unsupported file format';
 
   @override
   String get backupRestoreHint =>
-      'バックアップは /sd/xodos2backup.tar.xz を作成します\n復元は .tar、.tar.gz、.tar.xz に対応\nWine アーカイブは /opt/wine にインストールされます';
+      'Backup creates /sd/xodos2backup.tar.xz\nRestore supports .tar, .tar.gz, .tar.xz files\nWine archives will be installed to /opt/wine';
 
   @override
-  String get wineInstallationComplete => 'Wine のインストールが完了しました！';
+  String get wineInstallationComplete => 'Wine installation complete!';
 
   @override
-  String get restoreComplete => 'システム復元が完了しました！';
+  String get restoreComplete => 'System restore complete!';
 
   @override
-  String get checkTerminalForProgress => '進行状況はターミナルで確認してください...';
+  String get checkTerminalForProgress => 'Check terminal for progress...';
 
   @override
-  String get importantNote => '重要な注意';
+  String get importantNote => 'Important Note';
 
   @override
-  String get enableAndroidVenus => 'ANDROID_VENUS=1 を有効化';
+  String get enableAndroidVenus => 'Enable ANDROID_VENUS=1';
 
   @override
   String get androidVenusHint =>
-      'Venus サーバーコマンドに ANDROID_VENUS=1 環境変数を追加してください';
+      'Add ANDROID_VENUS=1 environment variable to Venus server command';
 
   @override
   String get venusSection => 'Venus (Vulkan)';
 
   @override
   String get venusAdvantages =>
-      'Android の Vulkan ドライバーを使用した Vulkan ベースのハードウェアアクセラレーション';
+      'Vulkan-based hardware acceleration using Android\'s Vulkan driver';
 
   @override
-  String get venusServerParams => 'Venus サーバーパラメータ';
+  String get venusServerParams => 'Venus server parameters';
 
   @override
-  String get venusEnvVar => 'Venus 環境変数';
+  String get venusEnvVar => 'Venus environment variables';
 
   @override
-  String get enableVenus => 'Venus を有効化（Android Vulkan）';
+  String get enableVenus => 'Enable Venus (Android Vulkan)';
 
   @override
   String get virglSection => 'VirGL (OpenGL)';

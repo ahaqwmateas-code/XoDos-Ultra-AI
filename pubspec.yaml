@@ -15,7 +15,7 @@ dependencies:
   # Core Features
   file_picker: ^8.1.2
   xterm: ^4.0.0
-  audioplayers: ^5.2.1
+  audioplayers: ^5.2.0
   record: ^5.2.1
   flutter_pty: ^0.4.2
   path_provider: ^2.1.5
@@ -31,14 +31,20 @@ dependencies:
   network_info_plus: ^6.1.4
   device_info_plus: ^11.5.0
   connectivity_plus: ^5.0.1
-  intl: ^0.20.2
+  intl: any
   uuid: ^4.0.0
-  package_info_plus: ^5.0.0
+  package_info_plus: ^9.0.1
+  
+  # Local packages
+  x11_flutter:
+    path: ./x11_flutter
+  avnc_flutter:
+    path: ./avnc_flutter
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^3.0.0
+  flutter_lints: any
 
 flutter:
   generate: true
