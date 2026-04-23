@@ -96,7 +96,12 @@ flutter {
 }
 
 dependencies {
-    implementation "androidx.core:core-ktx:1.13.1"
+    implementation("androidx.core:core-ktx:1.13.1") {
+        force = true
+    }
+    implementation("androidx.core:core:1.13.1") {
+        force = true
+    }
     implementation "androidx.appcompat:appcompat:1.7.0"
     implementation "com.google.android.material:material:1.12.0"
     implementation 'com.github.tiann:FreeReflection:3.2.2'
