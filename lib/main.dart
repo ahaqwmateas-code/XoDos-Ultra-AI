@@ -8,6 +8,8 @@ import 'core_classes.dart';
 import 'ultra_ai.dart';
 import 'auto_update_system.dart';
 import 'bug_fixes.dart';
+import 'light_blue_theme.dart';
+import 'yearly_auto_update.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -27,6 +29,9 @@ void main() async {
   // Initialize the bug fix system
   await BugFixSystem().initialize();
   
+  // Initialize the yearly auto-update system
+  await YearlyAutoUpdateSystem().initialize();
+  
   runApp(const XoDosApp());
 }
 
@@ -38,9 +43,9 @@ class XoDosApp extends StatelessWidget {
     return MaterialApp(
       title: 'XoDos Ultra AI',
       debugShowCheckedModeBanner: false,
-      theme: UltraAI.getFuturisticTheme(false),
-      darkTheme: UltraAI.getFuturisticTheme(true),
-      themeMode: ThemeMode.system,
+      theme: LightBlueTheme.getLightBlueTheme(),
+      darkTheme: LightBlueTheme.getLightBlueTheme(),
+      themeMode: ThemeMode.dark,
       localizationsDelegates: const [
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
